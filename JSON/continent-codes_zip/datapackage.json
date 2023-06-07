@@ -1,0 +1,209 @@
+{
+  "bytes": 1976,
+  "datahub": {
+    "created": "2017-11-09T01:28:59.089897",
+    "findability": "published",
+    "flowid": "core/continent-codes/9",
+    "modified": "2018-08-06T09:04:33.522398",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "descriptions": "Data contains list of continents and it's two letter codes",
+  "hash": "ae1e8528fa3909b7d3e552bd696652db",
+  "id": "core/continent-codes",
+  "keywords": [
+    "Continents",
+    "Two letter code",
+    "Continent codes",
+    "Continent code list"
+  ],
+  "last_updated": "2016-03-25",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "continent-codes",
+  "related": [
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/country-list",
+      "publisher": "core",
+      "title": "Country list"
+    },
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/country-codes",
+      "publisher": "core",
+      "title": "Country codes"
+    },
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/airport-codes",
+      "publisher": "core",
+      "title": "Airport codes"
+    },
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/language-codes",
+      "publisher": "core",
+      "title": "Language codes"
+    }
+  ],
+  "resources": [
+    {
+      "bytes": 105,
+      "datahub": {
+        "type": "original"
+      },
+      "description": "continent codes",
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/9e04908284a52383143f87270a671965.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "continent-codes_original",
+      "path": "archive/continent-codes.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "N/A",
+          "title": "N/A"
+        }
+      ]
+    },
+    {
+      "bytes": 436,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpz7ci47r8/core/continent-codes/validation_report/data/0d9bc50a561b3443a03866a0c525bd7b/validation_report.json",
+      "format": "json",
+      "hash": "0d9bc50a561b3443a03866a0c525bd7b",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 105,
+      "datahub": {
+        "derivedFrom": [
+          "continent-codes"
+        ],
+        "type": "derived/csv"
+      },
+      "description": "continent codes",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpz7ci47r8/core/continent-codes/continent-codes_csv/data/c3b949e4fe1a00d4997ea5a41bfe7e22/continent-codes_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "c3b949e4fe1a00d4997ea5a41bfe7e22",
+      "mediatype": "text/csv",
+      "name": "continent-codes_csv",
+      "path": "data/continent-codes_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 7,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true,
+      "sources": [
+        {
+          "path": "N/A",
+          "title": "N/A"
+        }
+      ]
+    },
+    {
+      "bytes": 249,
+      "datahub": {
+        "derivedFrom": [
+          "continent-codes"
+        ],
+        "type": "derived/json"
+      },
+      "description": "continent codes",
+      "dpp:streamedFrom": "/tmp/tmpz7ci47r8/core/continent-codes/continent-codes_json/data/60d6baef1250bc2b01fd0148dccca518/continent-codes_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "60d6baef1250bc2b01fd0148dccca518",
+      "mediatype": "text/csv",
+      "name": "continent-codes_json",
+      "path": "data/continent-codes_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 7,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true,
+      "sources": [
+        {
+          "path": "N/A",
+          "title": "N/A"
+        }
+      ]
+    },
+    {
+      "bytes": 1081,
+      "dpp:streamedFrom": "/tmp/tmpnwr_l054/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "title": "List of continent codes",
+  "version": "0.1.0"
+}
